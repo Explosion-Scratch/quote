@@ -8,15 +8,16 @@
   </head>
   <body>
 		<div class='container'>
-			<div class='quote'>
-			<div class='author'>
+			<div class='quote'></div>
+			<div class='author'></div>
 		</div>
   </body>
 </html>
 <script>
 	
-	$.getJSON('http://api.quotable.io/random/', 
+	$.getJSON('https://api.quotable.io/random/', 
 		function(data){
 			$('.quote').html(data);
+			console.log(data);
 	});
 </script>
