@@ -8,7 +8,7 @@
   </head>
   <body>
 		<div class='container'>
-			<div class='quote'></div>
+			<div id='quote'></div>
 			<div class='author'></div>
 		</div>
   </body>
@@ -17,7 +17,6 @@
 	
 	$.getJSON('https://api.quotable.io/random/', 
 		function(data){
-			$('.quote').html(data);
-			console.log(data['content']);
+			return data['content'];
 	});
 </script>
