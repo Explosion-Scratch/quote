@@ -13,3 +13,7 @@
 		</div>
   </body>
 </html>
+<script>
+	$.getJSON('http://api.quotable.io/random', function(data){
+		$('.quote').html(data.content);
+	});
