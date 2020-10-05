@@ -18,6 +18,6 @@
 	$.getJSON('https://api.quotable.io/random/', 
 		function(data){
 			$('.quote').html(data);
-			console.log(data);
+			console.log(data['content']);
 	});
 </script>
