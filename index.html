@@ -15,8 +15,8 @@
 </html>
 <script>
 	
-	$.getJSON('http://api.quotable.io/random', 
+	$.getJSON('http://api.quotable.io/random/', 
 		function(data){
-			$('.quote').html(data['content']);
+			$('.quote').html(data);
 	});
 </script>
