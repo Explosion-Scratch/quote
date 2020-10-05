@@ -18,9 +18,8 @@
 	function go() {
 		$.getJSON('https://api.quotable.io/random/', 
 			function(data){
-				output = data['content'];
-				$('#quote').html(output);
-				console.log(output)
+				$('#quote').html(data['content']);
+				$('#author').html(data['author']);
 		});
 	}
 </script>
