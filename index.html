@@ -17,6 +17,8 @@
 	
 	$.getJSON('https://api.quotable.io/random/', 
 		function(data){
-			return data['content'];
+			output = data['content'];
+			return output;
+			console.log(output)
 	});
 </script>
