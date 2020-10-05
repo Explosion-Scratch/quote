@@ -18,6 +18,7 @@
 	$.getJSON('https://api.quotable.io/random/', 
 		function(data){
 			output = data['content'];
+			document.getElementById('quote').innerHTML = output;
 			console.log(output)
 	});
 </script>
